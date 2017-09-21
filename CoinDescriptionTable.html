@@ -1,149 +1,141 @@
-
 <!DOCTYPE html>
 <html>
-<head>
 
+<head>
     <title>Sample Coin Description</title>
 </head>
+
 <body>
     <style>
-    .bddatagrid table 
-    {
-         border-collapse: collapse; 
-         text-align: left; width: 100%; 
-    } 
-    
-    .bddatagrid 
-    {
-        font: normal 12px/150% Verdana, Arial, Helvetica, sans-serif; 
-        background: #fff; 
-        overflow: hidden; 
-        border: 1px solid #006699; 
-        -webkit-border-radius: 3px; 
-        -moz-border-radius: 3px; 
-        border-radius: 3px; 
-    }
-    
-    .bddatagrid table td, 
-    
-    .bddatagrid table th 
-    { 
-        padding: 3px 3px; 
-    }
-    
-    .bddatagrid table thead th 
-    {
-        background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F) );
-        background:-moz-linear-gradient( center top, #006699 5%, #00557F 100% );
-        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');
-        background-color:#006699; 
-        color:#FFFFFF; 
-        font-size: 15px; 
-        font-weight: bold; 
-        border-left: 14px solid #0070A8; 
-    } 
-    
-    .bddatagrid table thead th:first-child 
-    { 
-        border: none; 
-    }
-    
-    .bddatagrid table tbody td 
-    { 
-        color: #00557F; 
-        border-left: 1px solid #E1EEF4;
-        font-size: 12px;
-        font-weight: normal; 
-    }
-    
-    .bddatagrid table tbody .alt td 
-    { 
-        background: #E1EEf4; 
-        color: #00557F; 
-    }
-    
-    .bddatagrid table tbody td:first-child 
-    { 
-        border-left: none; 
-    }
-    
-    .bddatagrid table tbody tr:last-child td 
-    { 
-        border-bottom: none; 
-    }
-    
-    .bddatagrid table tfoot td div 
-    { 
-        border-top: 1px solid #006699;background: #E1EEf4;
-    } 
-    
-    .bddatagrid table tfoot td 
-    { 
-        padding: 0; font-size: 12px 
-    } 
-    
-    .bddatagrid table tfoot td div
-    { 
-        padding: 2px; 
-    }
-    
-    .bddatagrid table tfoot td ul 
-    { 
-        margin: 0; 
-        padding:0; 
-        list-style: none; 
-        text-align: right; 
-    }
-    
-    .bddatagrid table tfoot  li 
-    { 
-        display: inline; 
-    }
-    
-    .bddatagrid table tfoot li a 
-    { 
-        text-decoration: none; 
-        display: inline-block;  
-        padding: 2px 8px; margin: 1px;
-        color: #FFFFFF;
-        border: 1px solid #006699;
-        -webkit-border-radius: 10px; 
-        -moz-border-radius: 10px; 
-        border-radius: 10px; 
-        background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F) );
-        background:-moz-linear-gradient( center top, #006699 5%, #00557F 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');
-        background-color:#006699; 
-    }
-    
-    .bddatagrid table tfoot ul.active, .bddatagrid table tfoot ul a:hover 
-    { 
-        text-decoration: none;
-        border-color: #00557F; 
-        color: #FFFFFF; 
-        background: none; 
-        background-color:#006699;
-    }
-    
-    div.dhtmlx_window_active, div.dhx_modal_cover_dv 
-    { 
-        position: fixed !important; 
-    }
+        .bddatagrid table {
+            border-collapse: collapse;
+            text-align: left;
+            width: 100%;
+        }
 
-    .bdfooter
-    { 
-        background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #00557F), color-stop(1, #006699) );
-        background:-moz-linear-gradient( center top, #006699 5%, #006699 100% );
-        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');
-        background-color:#00557F; 
-        color:#FFFFFF; 
-        font-size: 15px; 
-        font-weight: bold; 
-        border-left: 14px solid #0070A8; 
-    } 
+        .bddatagrid {
+            font: normal 12px/150% Verdana, Arial, Helvetica, sans-serif;
+            background: #fff;
+            overflow: hidden;
+            border: 1px solid #006699;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+        }
 
+        .bddatagrid table td,
 
+        .bddatagrid table th {
+            padding: 3px 3px;
+        }
+
+        .bddatagrid table thead th {
+            background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F));
+            background: -moz-linear-gradient( center top, #006699 5%, #00557F 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');
+            background-color: #006699;
+            color: #FFFFFF;
+            font-size: 24px;
+            font-weight: bold;
+            border-left: 14px solid #0070A8;
+            padding:10px;
+        }
+
+        .bddatagrid table thead th:first-child {
+            border: none;
+        }
+
+        .bddatagrid table tbody td {
+            color: #00557F;
+            border-left: 1px solid #E1EEF4;
+            font-size: 12px;
+            font-weight: normal;
+        }
+
+        .bddatagrid table tbody .alt td {
+            background: #E1EEf4;
+            color: #00557F;
+        }
+
+        .bddatagrid table tbody td:first-child {
+            border-left: none;
+        }
+
+        .bddatagrid table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .bddatagrid table tfoot td div {
+            border-top: 1px solid #006699;
+            background: #E1EEf4;
+        }
+
+        .bddatagrid table tfoot td {
+            padding: 0;
+            font-size: 12px
+        }
+
+        .bddatagrid table tfoot td div {
+            padding: 2px;
+        }
+
+        .bddatagrid table tfoot td ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: right;
+        }
+
+        .bddatagrid table tfoot li {
+            display: inline;
+        }
+
+        .bddatagrid table tfoot li a {
+            text-decoration: none;
+            display: inline-block;
+            padding: 2px 8px;
+            margin: 1px;
+            color: #FFFFFF;
+            border: 1px solid #006699;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F));
+            background: -moz-linear-gradient( center top, #006699 5%, #00557F 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');
+            background-color: #006699;
+        }
+
+        .bddatagrid table tfoot ul.active,
+        .bddatagrid table tfoot ul a:hover {
+            text-decoration: none;
+            border-color: #00557F;
+            color: #FFFFFF;
+            background: none;
+            background-color: #006699;
+        }
+
+        div.dhtmlx_window_active,
+        div.dhx_modal_cover_dv {
+            position: fixed !important;
+        }
     </style>
-    
+
+    <style>
+        .bdfooter {
+            background: -webkit-gradient( linear, left top, left bottom
+            , color-stop(0.05, #3A8306)
+            , color-stop(1, #60E209));
+            background: -moz-linear-gradient( center top, #3A8306 5%, #60E209 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3A8306', endColorstr='#60E209');
+            background-color: #2FC45C;
+            color: #FFFFFF;
+            font-size: 15px;
+            font-weight: bold;
+            border-left: 14px solid #0070A8;
+        }
+    </style>
+
     <div class="bddatagrid">
         <table>
             <thead>
@@ -153,7 +145,7 @@
                 <!-- <tr>
                     <th colspan="2">TANZANIA 1998 500 SHILINGI 1oz SILVER PROOF WILDEBEEST</th>
                 </tr> -->
-                
+
             </thead>
             <tfoot>
                 <tr>
@@ -169,9 +161,9 @@
                             </ul>
                         </div> -->
                         <tr>
-                                <th class="bdfooter" colspan="2">Click for more TANZANIA coins.</th>
+                            <th class="bdfooter" colspan="2">Click for more TANZANIA coins.</th>
                         </tr>
-            
+
                     </td>
                 </tr>
             </tfoot>
@@ -184,66 +176,67 @@
                     <td>Year</td>
                     <td>1998</td>
                 </tr>
-                <tr class="alt">
+                <tr>
                     <td>Denomination</td>
                     <td>500 Shilingi</td>
                 </tr>
-                <tr>
+                <tr class="alt">
                     <td>K.M.#</td>
                     <td>M-233</td>
                 </tr>
-                <tr class="alt">
-                    <td>Quality</td>
-                    <td>New	Proof</td>
-                </tr>
                 <tr>
+                    <td>Quality</td>
+                    <td>New Proof</td>
+                </tr>
+                <tr class="alt">
                     <td>Metal</td>
                     <td>Silver</td>
                 </tr>
-                <tr class="alt">
+                <tr>
                     <td>Fineness</td>
                     <td>.925</td>
                 </tr>
-                <tr>
+                <tr class="alt">
                     <td>Weight(gr)</td>
                     <td>33.4</td>
                 </tr>
-                <tr class="alt">
+                <tr>
                     <td>ASW(oz)</td>
                     <td>1</td>
                 </tr>
-                <tr>
+                <tr class="alt">
                     <td>Mintage</td>
                     <td>1000000</td>
                 </tr>
-                <tr class="alt">
+                <tr>
                     <td>Diameter(mm)</td>
                     <td>38.6</td>
                 </tr>
-                <tr>                    
+                <tr class="alt">
                     <td>Subject</td>
                     <td>Serengeti Wildlife</td>
                 </tr>
-                <tr class="alt">
+                <tr>
                     <td>Reverse</td>
                     <td>Wildebeest</td>
                 </tr>
-                <tr>                    
+                <tr class="alt">
                     <td>Box Included</td>
                     <td>Nyet</td>
                 </tr>
-                <tr class="alt">
-                        <td>COA Included</td>
-                        <td>Yep</td>
-                    </tr>
                 <tr>
+                    <td>COA Included</td>
+                    <td>Yep</td>
+                </tr>
+                <tr class="alt">
                     <td>Notes</td>
-                    <td>A few hair lines and oxidation spots on the fields.<BR>Rare coin!</td>
+                    <td>A few hair lines and oxidation spots on the fields.
+                        <BR>Rare coin!</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
 </body>
-</html>
 
+</html>
