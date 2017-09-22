@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+        <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
 <head>
     <title>Sample Coin Description</title>
 </head>
@@ -14,7 +14,7 @@
         }
 
         .bddatagrid {
-            font: normal 12px/150% Verdana, Arial, Helvetica, sans-serif;
+            font: normal 14px/150% Verdana, Arial, Helvetica, sans-serif;
             background: #fff;
             overflow: hidden;
             border: 1px solid #006699;
@@ -23,24 +23,27 @@
             border-radius: 5px;
         }
 
-        .bddatagrid table td,
-
+     .bddatagrid table td,
         .bddatagrid table th {
-            padding: 3px 3px;
+            padding: 2px 2px;
         }
+        
 
         .bddatagrid table thead th {
-            background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F));
+            background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), 
+            color-stop(1, #00557F));
             background: -moz-linear-gradient( center top, #006699 5%, #00557F 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', 
+            endColorstr= '#00557F');
             background-color: #006699;
             color: #FFFFFF;
-            font-size: 24px;
+            font-size: 28px;
             font-weight: bold;
             border-left: 14px solid #0070A8;
             padding:10px;
         }
-
+        
+  
         .bddatagrid table thead th:first-child {
             border: none;
         }
@@ -48,15 +51,17 @@
         .bddatagrid table tbody td {
             color: #00557F;
             border-left: 1px solid #E1EEF4;
-            font-size: 12px;
+            font-size: 15px;
             font-weight: normal;
         }
 
-        .bddatagrid table tbody .alt td {
+
+  .bddatagrid table tbody .alt td {
             background: #E1EEf4;
             color: #00557F;
         }
 
+        /*
         .bddatagrid table tbody td:first-child {
             border-left: none;
         }
@@ -119,9 +124,7 @@
         div.dhx_modal_cover_dv {
             position: fixed !important;
         }
-    </style>
-
-    <style>
+/*    
         .bdfooter {
             background: -webkit-gradient( linear, left top, left bottom
             , color-stop(0.05, #3A8306)
@@ -134,23 +137,55 @@
             font-weight: bold;
             border-left: 14px solid #0070A8;
         }
+*/
+        #bdcelldata
+        {
+            font:Verdana, Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+            font-style: normal;
+            color: black; 
+        }        
+
+#bdcellcurly
+        {
+            font-size: 15px;
+            font-style: normal;
+            width: 20px
+        }        
+
+#bdbdcountrylink
+        {
+            font-size: 15px;
+            font-style: bold;
+            width: 20px;
+            padding: 8px 8px;
+        }        
+
+#bdsquiggly
+        {
+            font-size: 24px;
+            font-style: bold;
+            color: red; 
+        }        
     </style>
 
     <div class="bddatagrid">
         <table>
             <thead>
                 <tr>
-                    <th colspan="2">BD World Coins</th>
+                    <th colspan="3">BD World Coins</th>
                 </tr>
                 <!-- <tr>
                     <th colspan="2">TANZANIA 1998 500 SHILINGI 1oz SILVER PROOF WILDEBEEST</th>
                 </tr> -->
 
             </thead>
+            <!--
             <tfoot>
                 <tr>
-                    <td colspan="2">
-                        <!-- <div id="paging">
+                    <td colspan="3">
+                         <div id="paging">
                             <ul><li><a href="#"><span>Previous</span></a></li>
                                 <li><a href="#" class="active"><span>1</span></a></li>
                                 <li><a href="#"><span>2</span></a></li>
@@ -159,76 +194,107 @@
                                 <li><a href="#"><span>5</span></a></li>
                                 <li><a href="#"><span>Next</span></a></li>
                             </ul>
-                        </div> -->
+                        </div>
                         <tr>
-                            <th class="bdfooter" colspan="2">Click for more TANZANIA coins.</th>
+                            <th class="bdfooter" colspan="3">Click for more TANZANIA coins.</th>
                         </tr>
 
                     </td>
                 </tr>
             </tfoot>
+            -->
+            
             <tbody>
-                <tr>
+
+                <tr class="alt">
+					<td></td>                
+                    <td id="bdcountrylink" colspan="2">
+                    <div>
+                    	<span id ="bdsquiggly">&#x21DD;</span> 
+                    	Click for more TANZANIA coins.
+                    	<span id ="bdsquiggly">&#x21DC;</span> 
+                    </div>
+                    </td>                             
+                    
+				</tr>
+
+				<tr>
+                    <td id="bdcellcurly">&#9635;</td>
                     <td>Country</td>
-                    <td>TANZANIA</td>
+                    <td id="bdcelldata">TANZANIA.</td>
                 </tr>
                 <tr class="alt">
+                    <td>&#9635;</td>
                     <td>Year</td>
                     <td>1998</td>
                 </tr>
                 <tr>
+                    <td>&#9635;</td>
                     <td>Denomination</td>
                     <td>500 Shilingi</td>
                 </tr>
                 <tr class="alt">
+                    <td>&#9635;</td>
                     <td>K.M.#</td>
                     <td>M-233</td>
                 </tr>
                 <tr>
+                    <td>&#9635;</td>
                     <td>Quality</td>
                     <td>New Proof</td>
                 </tr>
                 <tr class="alt">
+                    <td>&#9635;</td>
                     <td>Metal</td>
                     <td>Silver</td>
                 </tr>
                 <tr>
+                    <td>&#9635;</td>
                     <td>Fineness</td>
                     <td>.925</td>
                 </tr>
                 <tr class="alt">
+                    <td>&#9635;</td>
                     <td>Weight(gr)</td>
                     <td>33.4</td>
                 </tr>
                 <tr>
+                    <td>&#9635;</td>
                     <td>ASW(oz)</td>
                     <td>1</td>
                 </tr>
                 <tr class="alt">
+                    <td>&#9635;</td>
                     <td>Mintage</td>
                     <td>1000000</td>
                 </tr>
                 <tr>
+                    <td>&#9635;</td>
                     <td>Diameter(mm)</td>
                     <td>38.6</td>
                 </tr>
                 <tr class="alt">
+                    <td>&#9635;</td>
                     <td>Subject</td>
                     <td>Serengeti Wildlife</td>
                 </tr>
                 <tr>
+                    <td>&#9635;</td>
                     <td>Reverse</td>
                     <td>Wildebeest</td>
                 </tr>
                 <tr class="alt">
+                    <td>&#9635;</td>
                     <td>Box Included</td>
                     <td>Nyet</td>
                 </tr>
                 <tr>
+                    <td>&#9635;</td>
                     <td>COA Included</td>
                     <td>Yep</td>
                 </tr>
                 <tr class="alt">
+                    <td>&#9635;</td>
                     <td>Notes</td>
                     <td>A few hair lines and oxidation spots on the fields.
                         <BR>Rare coin!</td>
