@@ -30,17 +30,18 @@
         
 
         .bddatagrid table thead th {
-            background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), 
-            color-stop(1, #00557F));
-            background: -moz-linear-gradient( center top, #006699 5%, #00557F 100%);
+            background: -webkit-gradient( linear, left top, left bottom, 
+            color-stop(0.05, #8F4538), 
+            color-stop(1, #AF321F));
+            background: -moz-linear-gradient( center top, #8F4538 5%, #AF321F 100%);
             filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', 
-            endColorstr= '#00557F');
-            background-color: #006699;
+            endColorstr= 'black');
+            background-color: #8F4538;
             color: #FFFFFF;
-            font-size: 28px;
+            font-size: 250%;
             font-weight: bold;
-            border-left: 14px solid #0070A8;
-            padding:10px;
+            border-left: 25px solid #8F4538;
+            padding:12px;
         }
         
   
@@ -49,19 +50,18 @@
         }
 
         .bddatagrid table tbody td {
-            color: #00557F;
+            color: black;
             border-left: 1px solid #E1EEF4;
             font-size: 15px;
             font-weight: normal;
         }
 
 
-  .bddatagrid table tbody .alt td {
-            background: #E1EEf4;
-            color: #00557F;
+        .bddatagrid table tbody .alt td {
+            background: #FCE5C0;
+            color: black;
         }
 
-        /*
         .bddatagrid table tbody td:first-child {
             border-left: none;
         }
@@ -70,32 +70,32 @@
             border-bottom: none;
         }
 
-        .bddatagrid table tfoot td div {
+        /* .bddatagrid table tfoot td div {
             border-top: 1px solid #006699;
             background: #E1EEf4;
-        }
+        } */
 
-        .bddatagrid table tfoot td {
+        /* .bddatagrid table tfoot td {
             padding: 0;
             font-size: 12px
-        }
+        } */
 
-        .bddatagrid table tfoot td div {
+        /* .bddatagrid table tfoot td div {
             padding: 2px;
-        }
+        } */
 
-        .bddatagrid table tfoot td ul {
+        /* .bddatagrid table tfoot td ul {
             margin: 0;
             padding: 0;
             list-style: none;
             text-align: right;
-        }
+        } */
 
-        .bddatagrid table tfoot li {
+        /* .bddatagrid table tfoot li {
             display: inline;
-        }
+        } */
 
-        .bddatagrid table tfoot li a {
+        /* .bddatagrid table tfoot li a {
             text-decoration: none;
             display: inline-block;
             padding: 2px 8px;
@@ -105,20 +105,20 @@
             -webkit-border-radius: 10px;
             -moz-border-radius: 10px;
             border-radius: 10px;
-            background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F));
-            background: -moz-linear-gradient( center top, #006699 5%, #00557F 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');
+            background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, black));
+            background: -moz-linear-gradient( center top, #006699 5%, black 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='black');
             background-color: #006699;
-        }
+        } */
 
-        .bddatagrid table tfoot ul.active,
+        /* .bddatagrid table tfoot ul.active,
         .bddatagrid table tfoot ul a:hover {
             text-decoration: none;
-            border-color: #00557F;
+            border-color: black;
             color: #FFFFFF;
             background: none;
             background-color: #006699;
-        }
+        } */
 
         div.dhtmlx_window_active,
         div.dhx_modal_cover_dv {
@@ -142,19 +142,21 @@
         {
             font:Verdana, Arial, Helvetica, sans-serif;
             font-size: 15px;
-            font-weight: bold;
-            font-style: normal;
+            font-weight: bolder;
+            font-style: italic;
             color: black; 
+            padding: 3px;
         }        
 
-#bdcellcurly
+        #bdcellcurly
         {
-            font-size: 15px;
+            font-size: 13px;
             font-style: normal;
-            width: 20px
+            width: 20px;
+            text-align: center;
         }        
 
-#bdbdcountrylink
+        #bdbdcountrylink
         {
             font-size: 15px;
             font-style: bold;
@@ -162,7 +164,7 @@
             padding: 8px 8px;
         }        
 
-#bdsquiggly
+        #bdsquiggly
         {
             font-size: 24px;
             font-style: bold;
@@ -174,7 +176,7 @@
         <table>
             <thead>
                 <tr>
-                    <th colspan="3">BD World Coins</th>
+                    <th colspan="3">&#x269c; BD World Coins</th>
                 </tr>
                 <!-- <tr>
                     <th colspan="2">TANZANIA 1998 500 SHILINGI 1oz SILVER PROOF WILDEBEEST</th>
@@ -211,7 +213,7 @@
                     <td id="bdcountrylink" colspan="2">
                     <div>
                     	<span id ="bdsquiggly">&#x21DD;</span> 
-                    	Click for more TANZANIA coins.
+                        <a href="http://stores.ebay.com/B-D-World-Coins/TANZANIA-/_i.html?_fsub=9218160&_sid=36277927&_trksid=p4634.c0.m322">Click for more TANZANIA coins.</a>
                     	<span id ="bdsquiggly">&#x21DC;</span> 
                     </div>
                     </td>                             
@@ -224,79 +226,79 @@
                     <td id="bdcelldata">TANZANIA.</td>
                 </tr>
                 <tr class="alt">
-                    <td>&#9635;</td>
+                    <td id="bdcellcurly">&#9635;</td>
                     <td>Year</td>
-                    <td>1998</td>
+                    <td id="bdcelldata">1998</td>
                 </tr>
                 <tr>
-                    <td>&#9635;</td>
+                    <td id="bdcellcurly">&#9635;</td>
                     <td>Denomination</td>
-                    <td>500 Shilingi</td>
+                    <td id="bdcelldata">500 Shilingi</td>
                 </tr>
                 <tr class="alt">
-                    <td>&#9635;</td>
+                    <td id="bdcellcurly">&#9635;</td>
                     <td>K.M.#</td>
-                    <td>M-233</td>
+                    <td id="bdcelldata">M-233</td>
                 </tr>
                 <tr>
-                    <td>&#9635;</td>
+                    <td id="bdcellcurly">&#9635;</td>
                     <td>Quality</td>
-                    <td>New Proof</td>
+                    <td id="bdcelldata">New Proof</td>
                 </tr>
                 <tr class="alt">
-                    <td>&#9635;</td>
+                    <td id="bdcellcurly">&#9635;</td>
                     <td>Metal</td>
-                    <td>Silver</td>
+                    <td id="bdcelldata">Silver</td>
                 </tr>
                 <tr>
-                    <td>&#9635;</td>
+                    <td id="bdcellcurly">&#9635;</td>
                     <td>Fineness</td>
-                    <td>.925</td>
+                    <td id="bdcelldata">.925</td>
                 </tr>
                 <tr class="alt">
-                    <td>&#9635;</td>
+                    <td id="bdcellcurly">&#9635;</td>
                     <td>Weight(gr)</td>
-                    <td>33.4</td>
+                    <td id="bdcelldata">33.4</td>
                 </tr>
                 <tr>
-                    <td>&#9635;</td>
+                    <td id="bdcellcurly">&#9635;</td>
                     <td>ASW(oz)</td>
-                    <td>1</td>
+                    <td id="bdcelldata">1</td>
                 </tr>
                 <tr class="alt">
-                    <td>&#9635;</td>
+                    <td id="bdcellcurly">&#9635;</td>
                     <td>Mintage</td>
-                    <td>1000000</td>
+                    <td id="bdcelldata">1000000</td>
                 </tr>
                 <tr>
-                    <td>&#9635;</td>
+                    <td id="bdcellcurly">&#9635;</td>
                     <td>Diameter(mm)</td>
-                    <td>38.6</td>
+                    <td id="bdcelldata">38.6</td>
                 </tr>
                 <tr class="alt">
-                    <td>&#9635;</td>
+                    <td id="bdcellcurly">&#9635;</td>
                     <td>Subject</td>
-                    <td>Serengeti Wildlife</td>
+                    <td id="bdcelldata">Serengeti Wildlife</td>
                 </tr>
                 <tr>
-                    <td>&#9635;</td>
+                    <td id="bdcellcurly">&#9635;</td>
                     <td>Reverse</td>
-                    <td>Wildebeest</td>
+                    <td id="bdcelldata">Wildebeest</td>
                 </tr>
                 <tr class="alt">
-                    <td>&#9635;</td>
+                    <td id="bdcellcurly">&#9635;</td>
                     <td>Box Included</td>
-                    <td>Nyet</td>
+                    <td id="bdcelldata">Nyet</td>
                 </tr>
                 <tr>
-                    <td>&#9635;</td>
+                    <td id="bdcellcurly">&#9635;</td>
                     <td>COA Included</td>
-                    <td>Yep</td>
+                    <td id="bdcelldata">Yep</td>
                 </tr>
                 <tr class="alt">
-                    <td>&#9635;</td>
+                    <td id="bdcellcurly">&#9635;</td>
                     <td>Notes</td>
-                    <td>A few hair lines and oxidation spots on the fields.
+                    <td id="bdcelldata">A few hair lines and oxidation spots on the fields.
                         <BR>Rare coin!</td>
                 </tr>
             </tbody>
