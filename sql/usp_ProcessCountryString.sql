@@ -1,4 +1,7 @@
-select char(0xC6)
+--select char(0xC6)
+
+DROP PROCEDURE usp_ProcessCountryString 
+GO
 
 CREATE PROCEDURE usp_ProcessCountryString (@country VARCHAR(200), @id VARCHAR(20) )
 AS
@@ -14,13 +17,26 @@ BEGIN
 	IF(@i > 0)
 	BEGIN
 			SET @CountryName = LTRIM(RTRIM(SUBSTRING(@country, 0, @i)));
-			SET @RegionName = LTRIM(RTRIM(SUBSTRING(@country, @i+2, LEN(@country)-(@i+2))));
+			SET @RegionName = LTRIM(RTRIM(SUBSTRING(@country, @i+2, LEN(@country)-(@i+1))));
 
+			IF (NOT EXISTS (SELECT NULL FROM [dbo].[Country] WHERE [CountryName] = @CountryName))
+			BEGIN
+				INSERT INTO [dbo].[Country]
+					([CountryName], [NumismasterID], [CreatedDate],[ModifiedDate])
+				VALUES(
+					@CountryName,
+					0,
+					GETDATE(),
+					NULL);
+
+			END
+			
 			INSERT INTO [dbo].[Region]
-				([RegionName],[NumismasterID],[CreatedDate],[ModifiedDate])
+				([RegionName], [Country_GUID], [NumismasterID],[CreatedDate],[ModifiedDate])
 			VALUES
 				(@RegionName,
-				(SELECT CountryName FROM Country WHERE CountryName = CountryName),
+				(SELECT [GUID] FROM Country WHERE CountryName = @CountryName),
+				@ID,
 				GETDATE(),
 				NULL)
 	END

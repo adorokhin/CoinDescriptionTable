@@ -1,3 +1,5 @@
+http://secure.numismaster.com/ta/Coins.admin?rnd=JPEHWTFL&@impl=coins.ui.ucatalog.flat.coin.UiControl_FindResults&@prms=536561726368547970653d31&@windowId=QLMAV&Origin=3&AdvanceSearch=0&PRefine=&Country=German%20States%20%5C%20Aachen&Denom=%20&CountryId=470&DenomId=-1&KM=&Comp=&Date=
+
 select char(0x4b) 
 + char(0x72) 
 + char(0x61) 
@@ -34,7 +36,9 @@ select char(0x4b)
 + char(0x35) 
 + char(0x32)
 
-declare @s varchar(200) = '4b7261757365436f696e49643d34363736392653656172636849643d34373236383739',
+declare @prms varchar(200) = '536561726368547970653d31'
+
+declare @s varchar(200) = @prms, --'4b7261757365436f696e49643d34363736392653656172636849643d34373236383739',
 		@q nvarchar(200) = N'',
 		@c nchar(1),
 		@i int=1,

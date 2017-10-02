@@ -1,8 +1,16 @@
+exec usp_ProcessCountryString 'Aland Islands','1374';
+exec usp_ProcessCountryString 'Alaska \\ Sitka','1543';
+
+
+use bdwc
+go
+
 truncate table country
 truncate table region
 
 select * from country
-truncate table region
+select * from region
+
 
 
 exec usp_ProcessCountryString 'Abkhazia','4545';
@@ -392,7 +400,7 @@ exec usp_ProcessCountryString 'Gambia, The','144';
 exec usp_ProcessCountryString 'Georgia','145';
 exec usp_ProcessCountryString 'German East Africa','377';
 exec usp_ProcessCountryString 'German New Guinea','1378';
-exec usp_ProcessCountryString 'German States','1342';
+--exec usp_ProcessCountryString 'German States','1342';
 exec usp_ProcessCountryString 'German States','578';
 exec usp_ProcessCountryString 'German States \\ Aachen','470';
 exec usp_ProcessCountryString 'German States \\ Aalen','471';
